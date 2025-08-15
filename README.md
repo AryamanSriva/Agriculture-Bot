@@ -3,8 +3,6 @@
 A simple **multilingual question-answering chatbot** that uses **Sentence Transformers** for semantic search and **Google Translator** for real-time language translation.  
 It can understand questions in multiple languages, find the closest matching FAQ from a dataset, and reply in the user's preferred language.
 
----
-
 ## Features
 
 - **Multilingual Support** – Works with any language supported by Google Translate.
@@ -12,7 +10,6 @@ It can understand questions in multiple languages, find the closest matching FAQ
 - **Fast Matching** – Pre-encodes dataset questions for quick responses.
 - **Custom Dataset** – Works with your own CSV of questions and answers.
 
----
 
 ## Project Structure
 
@@ -24,8 +21,6 @@ It can understand questions in multiple languages, find the closest matching FAQ
 └── README.md               # Documentation
 
 ````
-
----
 
 ## Dataset Format
 
@@ -47,7 +42,6 @@ You: पासवर्ड कैसे रीसेट करें?
 Bot: आप इसे सेटिंग्स पेज से रीसेट कर सकते हैं।
 ```
 
----
 
 ## How It Works
 
@@ -57,15 +51,11 @@ Bot: आप इसे सेटिंग्स पेज से रीसेट 
 4. **Semantic Search** – Finds the most similar question from the dataset.
 5. **Answer Translation** – Translates the answer back to the user's preferred language.
 
----
-
 ## Requirements
 
 * [pandas](https://pandas.pydata.org/)
 * [sentence-transformers](https://www.sbert.net/)
 * [deep-translator](https://pypi.org/project/deep-translator/)
-
----
 
 ## Notes
 
@@ -74,7 +64,7 @@ Bot: आप इसे सेटिंग्स पेज से रीसेट 
 * Works best with **clear and direct FAQs**.
 
 
-## 💡 Future Improvements
+## Future Improvements
 
 * Add **vector database** support for larger datasets.
 * Integrate **voice input/output** for a conversational feel.
