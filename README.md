@@ -1,20 +1,20 @@
-# 🌍 Multilingual Agriculture FAQ Chatbot
+# Multilingual Agriculture FAQ Chatbot
 
 A simple **multilingual question-answering chatbot** that uses **Sentence Transformers** for semantic search and **Google Translator** for real-time language translation.  
 It can understand questions in multiple languages, find the closest matching FAQ from a dataset, and reply in the user's preferred language.
 
 ---
 
-## ✨ Features
+## Features
 
-- 🗣 **Multilingual Support** – Works with any language supported by Google Translate.
-- 🔍 **Semantic Search** – Uses [SentenceTransformers](https://www.sbert.net/) for high-quality question matching.
-- ⚡ **Fast Matching** – Pre-encodes dataset questions for quick responses.
-- 📄 **Custom Dataset** – Works with your own CSV of questions and answers.
+- **Multilingual Support** – Works with any language supported by Google Translate.
+- **Semantic Search** – Uses [SentenceTransformers](https://www.sbert.net/) for high-quality question matching.
+- **Fast Matching** – Pre-encodes dataset questions for quick responses.
+- **Custom Dataset** – Works with your own CSV of questions and answers.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 
@@ -27,48 +27,17 @@ It can understand questions in multiple languages, find the closest matching FAQ
 
 ---
 
-## 📊 Dataset Format
+## Dataset Format
 
-The `parquetreader.csv` file should have **two columns**:
+The `dataset.csv` file should have **two columns**:
 
 | question                 | answers               |
 |--------------------------|-----------------------|
 | What is your name?       | My name is Chatbot.   |
 | How can I reset my password? | You can reset it from the settings page. |
 
----
 
-## ⚙️ Installation
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/yourusername/multilingual-faq-chatbot.git
-cd multilingual-faq-chatbot
-````
-
-### 2️⃣ Install Dependencies
-
-Make sure you have **Python 3.8+** installed.
-
-```bash
-pip install pandas sentence-transformers deep-translator
-```
-
----
-
-## 🚀 Usage
-
-### 1️⃣ Prepare your dataset
-
-Edit `parquetreader.csv` to include your FAQs.
-
-### 2️⃣ Run the Chatbot
-
-```bash
-python chatbot.py
-```
-
-### 3️⃣ Example Interaction
+### Example Interaction
 
 ```
 Please enter your preferred language code (e.g., 'en' for English, 'hi' for Hindi, 'bn' for Bengali):
@@ -80,9 +49,9 @@ Bot: आप इसे सेटिंग्स पेज से रीसेट 
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
-1. **Load Dataset** – Reads `parquetreader.csv` into memory.
+1. **Load Dataset** – Reads `dataset.csv` into memory.
 2. **Sentence Embeddings** – Encodes all questions using `paraphrase-multilingual-MiniLM-L12-v2`.
 3. **User Input** – Translates input into English for better matching.
 4. **Semantic Search** – Finds the most similar question from the dataset.
@@ -90,7 +59,7 @@ Bot: आप इसे सेटिंग्स पेज से रीसेट 
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 * [pandas](https://pandas.pydata.org/)
 * [sentence-transformers](https://www.sbert.net/)
@@ -98,19 +67,12 @@ Bot: आप इसे सेटिंग्स पेज से रीसेट 
 
 ---
 
-## 📝 Notes
+## Notes
 
 * Default similarity threshold is **0.3** – you can adjust it in `get_response()` if needed.
 * If translation fails, the bot falls back to the original text.
 * Works best with **clear and direct FAQs**.
 
----
-
-## 📜 License
-
-This project is licensed under the **MIT License** – feel free to use, modify, and distribute.
-
----
 
 ## 💡 Future Improvements
 
