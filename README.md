@@ -1,7 +1,7 @@
 # Multilingual Agriculture FAQ Chatbot
 
 A simple **multilingual question-answering chatbot** that uses **Sentence Transformers** for semantic search and **Google Translator** for real-time language translation.  
-It can understand questions in multiple languages, find the closest matching FAQ from a dataset and reply in the user's preferred language.
+It can understand questions in multiple languages, find the closest matching FAQ from the dataset and reply in the user's preferred language.
 
 ## Features
 
