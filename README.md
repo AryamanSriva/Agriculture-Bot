@@ -8,7 +8,7 @@ It can understand questions in multiple languages, find the closest matching FAQ
 - **Multilingual Support** – Works with any language supported by Google Translate.
 - **Semantic Search** – Uses [SentenceTransformers](https://www.sbert.net/) for high-quality question matching.
 - **Fast Matching** – Pre-encodes dataset questions for quick responses.
-- **Custom Dataset** – Works with your own CSV of questions and answers.
+- **Custom Dataset** – Works with own CSV of questions and answers.
 
 
 ## Project Structure
