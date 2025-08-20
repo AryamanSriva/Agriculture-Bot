@@ -16,7 +16,7 @@ It can understand questions in multiple languages, find the closest matching FAQ
 ```
 
 .
-├── parquetreader.csv       # Your dataset file (questions & answers)
+├── parquetreader.csv       # Dataset file (questions & answers)
 ├── chatbot.py              # Main chatbot script
 └── README.md               # Documentation
 
