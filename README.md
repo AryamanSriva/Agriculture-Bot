@@ -14,12 +14,9 @@ It can understand questions in multiple languages, find the closest matching FAQ
 ## Project Structure
 
 ```
-
-.
 ├── parquetreader.csv       # Dataset file (questions & answers)
 ├── chatbot.py              # Main chatbot script
 └── README.md               # Documentation
-
 ````
 
 ## Dataset Format
