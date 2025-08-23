@@ -10,7 +10,6 @@ It can understand questions in multiple languages, find the closest matching FAQ
 - **Fast Matching** – Pre-encodes dataset questions for quick responses.
 - **Custom Dataset** – Works with own CSV of questions and answers.
 
-
 ## Project Structure
 
 ```
@@ -28,7 +27,6 @@ The `dataset.csv` file should have **two columns**:
 | What is your name?       | My name is Chatbot.   |
 | How can I reset my password? | You can reset it from the settings page. |
 
-
 ### Example Interaction
 
 ```
@@ -38,7 +36,6 @@ Multilingual Chatbot is ready! Type 'exit' to quit.
 You: पासवर्ड कैसे रीसेट करें?
 Bot: आप इसे सेटिंग्स पेज से रीसेट कर सकते हैं।
 ```
-
 
 ## How It Works
 
@@ -59,7 +56,6 @@ Bot: आप इसे सेटिंग्स पेज से रीसेट 
 * Default similarity threshold is **0.3** – you can adjust it in `get_response()` if needed.
 * If translation fails, the bot falls back to the original text.
 * Works best with **clear and direct FAQs**.
-
 
 ## Future Improvements
 
