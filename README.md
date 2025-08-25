@@ -53,7 +53,7 @@ Bot: आप इसे सेटिंग्स पेज से रीसेट 
 
 ## Notes
 
-* Default similarity threshold is **0.3** – you can adjust it in `get_response()` if needed.
+* Default similarity threshold is **0.3** – we can adjust it in `get_response()` if needed.
 * If translation fails, the bot falls back to the original text.
 * Works best with **clear and direct FAQs**.
 
